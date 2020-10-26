@@ -45,19 +45,4 @@ with open(sys.argv[2],'w') as out:
             out.write('{}\n{}\n{}\n{}\n'.format(id, seqline[pos+6:].lstrip('G'), qualid, qualline[pos+6+No_G:]))
         else:
             remove_seq+=1
-   # print(len(record))
-    #print('the number of sequences removed:{}'.format(remove_seq))
-
-
-
-
-'''
-        #tag = False
-        #for i in range(0,40):
-            if seqline[i:i+6] == barcode[0]:
-                if tag == False:
-                    print('{}\n{}\n{}\n{}'.format(id, seqline[i+6:], qualid, qualline[i+6:]))
-                    tag = True
-                    remain_seq_length+=1
-    #print(len(record)-remain_seq_length)
-'''
+  
