@@ -96,13 +96,3 @@ for i in range(len(df_list)):
     m.weblogo(logo_name + '-' + str(i+1) + ".png", unit_name="probability", color_scheme="color_classic")
 for seq in consensus_sequence:
     print(seq[::-1],file=final_out)
-
-'''
-#the number of read in each position
-for i in range(len(df_list)):
-    number_presence= len(df_list[i])-df_list[i].isnull().sum()
-    fig = plt.figure()
-    plt.plot(number_presence)
-    plt.title('the number of read in each position')
-    fig.savefig(plot_filename + '-' + str(i+1) + ".png")
-'''
