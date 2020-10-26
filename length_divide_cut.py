@@ -8,10 +8,9 @@ import glob
 import pandas as pd
 import sys
 import matplotlib.pyplot as plt
-#filenames=glob.glob('**/3_merged.tab', recursive=True)
+
 filenames=glob.glob('**/6_CDR3_lowCDR_remove.txt', recursive=True)
-#seqs is the list of the UTR_leader sequences
-#sys.argv[1]="~/5_allel/2_fasta/IGHV....fasta"
+
 seqs=[]
 ids=[]
 labels=["-A","-B","-C","-D","-E","-F"]
@@ -40,15 +39,14 @@ for f in filenames:
     for i in range(len(seqs)):
         seq.append(new_df[new_df["UTR_leader"].str.endswith(seqs[i], na=False)])
         len_occu.append(seq[i]['CDR3 length'].value_counts().to_frame().reset_index().rename(columns={'index':'CDR3 length', 'CDR3 length':'occurance'}))
-#        len_occu=seq[i]['CDR3 length'].value_counts().to_frame().reset_index().rename(columns={'index':'CDR3 length', 'CDR3 length':'occurance'})
         len_sort_occu.append(len_occu[i].sort_values('CDR3 length'))
         x=len_sort_occu[i]["CDR3 length"]
         y=len_sort_occu[i]['occurance']
-        print(i,"before:",count[i])
+        #print(i,"before:",count[i])
         if len(len_sort_occu[i])>1:
-            print(len_sort_occu[i])
+            #print(len_sort_occu[i])
             count[i]+=1
-            print(i,"after:",count[i])
+            #print(i,"after:",count[i])
             if count[i]<=8:
                 if len(seqs)==1:
                     axs.plot(x,y,color=colors[i])
@@ -63,8 +61,6 @@ else:
         axs[i].locator_params(integer=True)
 plt.xlabel('CDR3 length')
 plt.ylabel('number of different entries')
-
-#fig.suptitle("Varient 5'UTR in IGHV4-4*02" )
 fig.suptitle(("CDR3 length of sequences associated to \n the 5'UTR-leader sequence of " + sys.argv[2]))
 plt.savefig(sys.argv[2] + "_cut.png")
 
