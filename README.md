@@ -6,7 +6,7 @@ this is a tool for computational inference and analysis of 5’UTR-leader sequen
 Purpose | tools
 ------------ | ------------- 
 5'-barcode clipping | [barcode_remove.py](barcode_remove.py)
-paired-end reads synchronizing | [PairSeq.py](https://presto.readthedocs.io/en/stable/tools/PairSeq.html#pairseq) from pRESTO
+paired-end reads synchronizing | [PairSeq.py from pRESTO](https://presto.readthedocs.io/en/stable/tools/PairSeq.html#pairseq)
 antibody repertoires analysis| [IgDiscover](http://docs.igdiscover.se/en/stable/index.html)
 alignement filtering | [filtered.sh](filtered.sh)
 5'UTR-leader seqs extracting | [extract_UL.py](extract_UL.py)
