@@ -5,10 +5,15 @@ this is a tool for computational inference and analysis of 5’UTR-leader sequen
 ## Table of contents
 Purpose | Program
 ------------ | -------------
-Content from cell 1 | barcode_remove.py
-Content in the first column | Content in the second column
-
-
+clipping 5'-barcode | barcode_remove.py
+synchronizing paired-end reads | PairSeq.py from pRESTO
+synchronizing paired-end reads | IgDiscover
+filtering alignement | filtered.sh
+extracting 5'UTR-leader seqs | extract_UL.py
+summarizing seqs from subjects | allele.sh
+summarizing seqs from alleles | aligned.py & count.py
+Haplotype Inference  | haplotyping.py
+CDR3-length distribution analysis | CDR3_length.py
 
 * [General info](#general-info)
 * [Technologies](#technologies)
