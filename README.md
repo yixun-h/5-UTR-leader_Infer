@@ -1,6 +1,7 @@
 # 5'UTR-leaderseq inference pipeline
 ## Introduction
-This is a tool for computational inference and analysis of 5’UTR-leader sequence of alleles from immunoglobulin heavy chain genes. 
+This is a tool can be used to infer the germline reference set of 5’UTR-leader sequence of immunoglobulin heavy chain (IGHV) genes based on the public dataset of antibody repertoires from naïve B-cells.
+
 The pipeline is consist of three sections: 
 * Data pre-process
 * Inference of 5'UTR-leader sequences
