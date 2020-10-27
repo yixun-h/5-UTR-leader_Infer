@@ -15,10 +15,7 @@ summarizing seqs from alleles | [aligned.py](aligned.py) & [count.py](count.py)
 Haplotype Inference  | [haplotyping.py](haplotyping.py)
 CDR3-length distribution analysis | [CDR3_length.py](CDR3_length.py)
 
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
-
+https://github.com/yixun-h/5-UTR-leader_Infer/issues/2#issue-730479706
 ## Technologies
 Project is created with:
 * Python/3.6.6
