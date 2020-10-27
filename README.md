@@ -3,12 +3,8 @@
 This is a tool for computational inference and analysis of 5’UTR-leader sequence of alleles from immunoglobulin heavy chain genes. 
 The pipeline is consist of three sections: 
 * Data pre-process
-Snakefile can be used to run the scripts for 98 subjects before IgDiscover analysis. 
 * Inference of 5'UTR-leader sequences
-
 * Quality control
-snakefile2 can be used after IgDiscover analysis
-
 
 ## Table of contents
 Purpose | tools
