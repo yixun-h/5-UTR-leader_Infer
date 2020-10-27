@@ -4,12 +4,12 @@ this is a tool for computational inference and analysis of 5’UTR-leader sequen
 
 ## Table of contents
 Purpose | Program
------------- | -------------
-clipping 5'-barcode | barcode_remove.py
-synchronizing paired-end reads | PairSeq.py from pRESTO
-synchronizing paired-end reads | IgDiscover
-filtering alignement | filtered.sh
-extracting 5'UTR-leader seqs | extract_UL.py
+------------ | ------------- 
+5'-barcode clipping | barcode_remove.py
+paired-end reads synchronizing | PairSeq.py from pRESTO
+antibody repertoires analysis| IgDiscover
+alignement filtering | filtered.sh
+5'UTR-leader seqs extracting | extract_UL.py
 summarizing seqs from subjects | allele.sh
 summarizing seqs from alleles | aligned.py & count.py
 Haplotype Inference  | haplotyping.py
