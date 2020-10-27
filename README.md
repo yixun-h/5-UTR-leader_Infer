@@ -8,12 +8,12 @@ Purpose | Program
 5'-barcode clipping | [barcode_remove.py](barcode_remove.py)
 paired-end reads synchronizing | PairSeq.py from pRESTO
 antibody repertoires analysis| IgDiscover
-alignement filtering | filtered.sh
-5'UTR-leader seqs extracting | extract_UL.py
-summarizing seqs from subjects | allele.sh
-summarizing seqs from alleles | aligned.py & count.py
-Haplotype Inference  | haplotyping.py
-CDR3-length distribution analysis | CDR3_length.py
+alignement filtering | [filtered.sh](filtered.sh)
+5'UTR-leader seqs extracting | [extract_UL.py](extract_UL.py)
+summarizing seqs from subjects | [allele.sh](allele.sh)
+summarizing seqs from alleles | [aligned.py](aligned.py) & [count.py](count.py)
+Haplotype Inference  | [haplotyping.py](haplotyping.py)
+CDR3-length distribution analysis | [CDR3_length.py](CDR3_length.py)
 
 * [General info](#general-info)
 * [Technologies](#technologies)
