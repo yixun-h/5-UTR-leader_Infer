@@ -3,11 +3,11 @@
 this is a tool for computational inference and analysis of 5’UTR-leader sequence of alleles from immunoglobulin heavy chain genes. 
 
 ## Table of contents
-Purpose | Program
+Purpose | tools
 ------------ | ------------- 
 5'-barcode clipping | [barcode_remove.py](barcode_remove.py)
-paired-end reads synchronizing | PairSeq.py from pRESTO
-antibody repertoires analysis| IgDiscover
+paired-end reads synchronizing | [PairSeq.py](https://presto.readthedocs.io/en/stable/tools/PairSeq.html#pairseq) from pRESTO
+antibody repertoires analysis| [IgDiscover](http://docs.igdiscover.se/en/stable/index.html)
 alignement filtering | [filtered.sh](filtered.sh)
 5'UTR-leader seqs extracting | [extract_UL.py](extract_UL.py)
 summarizing seqs from subjects | [allele.sh](allele.sh)
