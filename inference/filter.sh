@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
-gunzip filtered.tab
+'''
+Title: filter.sh
+Author:Yixun Huang
+Description:
+    This program will filter the output of IgDiscover analysis, "filtered.tab", and extract 5'UTR-leader sequences for each allele.
+Usage:
+    bash filter.sh
+'''
+gunzip filtered.tab.gz
 cat filtered.tab | awk -F "\t" -v OFS="\t" 'NR==1; {if ($28 == 0) {print $0}}' > 2_filtered_V_error_0.tab
 python ~/3_filter/UTR_leader.py 2_filtered_V_error_0.tab 3_merged.tab
 cat 3_merged.tab | cut -f 3,53 | grep .> 4_UL.txt
