@@ -1,5 +1,5 @@
 #!/bin/sh
-
+# This script is from https://stackoverflow.com/questions/935251/linux-delete-files-that-dont-contain-specific-number-of-lines/33787463 by Kevin Ivarsen
 # rmlc.sh - Remove by line count
 
 SCRIPTNAME="rmlc.sh"
