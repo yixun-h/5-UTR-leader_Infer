@@ -9,8 +9,6 @@ Description:
 Usage:
     ./UTR_leader.py 2_filtered_V_error_0.tab 3_merged.tab
 '''
-#merge column UTR and leafer into a new column 'UTR_leader'
-# ./UTR_leader.py 2_filtered_V_error_0.tab 3_merged.tab
 
 import pandas as pd
 import sys
