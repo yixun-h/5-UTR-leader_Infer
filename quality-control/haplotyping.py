@@ -1,6 +1,13 @@
 #!/Users/apple/anaconda3/bin/python3
 #!/usr/bin/env python
-# python ~/haplotyping.py IGHV4-4-2\*02 splitting/output/IGHV4-4_02 
+'''
+Title: haplotyping.py
+Author:Yixun Huang
+Description:
+    This script will infer the haplotypes of heterozogous indivuduals by explore the assocaition between IGHV gene and IGHJ6 genes.
+Usage:
+    python ~/haplotyping.py IGHV4-4-2\*02 splitting/output/IGHV4-4_02 
+'''
 import pandas as pd
 import sys
 seqs=[]
