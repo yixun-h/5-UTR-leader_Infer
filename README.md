@@ -10,10 +10,10 @@ The pipeline is consist of three sections:
 ## Table of contents
 Purpose | tools
 ------------ | ------------- 
-5'-barcode clipping | [barcode_remove.py](pro-process/barcode_remove.py)
+5'-barcode clipping | [barcode_remove.py](pre-process/barcode_remove.py)
 Paired-end reads synchronizing | [PairSeq.py from pRESTO](https://presto.readthedocs.io/en/stable/tools/PairSeq.html#pairseq)
 antibody repertoires analysis| [IgDiscover](http://docs.igdiscover.se/en/stable/index.html)
-alignement filtering | [filtered.sh](filtered.sh)
+alignement filtering | [filtered.sh](https://github.com/yixun-h/5-UTR-leader_Infer/blob/main/filter.sh)
 5'UTR-leader seqs extracting | [extract_UL.py](extract_UL.py)
 summarizing seqs from subjects | [allele.sh](allele.sh)
 summarizing seqs from alleles | [aligned.py](aligned.py) & [count.py](count.py)
