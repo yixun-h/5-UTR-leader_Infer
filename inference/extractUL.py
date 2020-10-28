@@ -10,7 +10,7 @@ Description:
     1.	Read the sequences, flip them over and store them in a data frame (so that the 3' most base ends up in column 1, the second 3' most base ends up in column 2, an so on).
     2.	Identify the columns where less than 50% of the rows contain data. Any data 5' of this should not be used. (calculate the percentage of missing value for each colunm. clip this columns away)
     3.	Loop over the columns (stopping at the column identified in 2.), and check which nucleotide/nucleotides that are present in more than 30% of all rows. Missing data (that will occur in the 5' end of the sequences) should probably not be considered here, but the nucleotide should found in >30% of the rows where there actually is data. 
-    	In the most easy case, there will only be one nucleotide that is found in >30% for each position.
+    	For most of easy cases, there will only be one nucleotide that is found in >30% for each position.
     	In the more difficult cases, there will be two different sequences that both are rather common. If they differ in more than one position. The solution would be to stop the loop whenever such a position is found and then divide the data frame into two data frames (based on the nucleotide found at this position). Then the analysis (step 2 and 3) can be re-performed on each of these data frames separately.   
 Usage:
     ./../extractUL.py IGHV1-18\*01.txt IGHV1-18\*01_out IGHV1-18\*01 seqlogo_IGHV1-18\*01
