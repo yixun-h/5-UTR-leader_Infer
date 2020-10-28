@@ -13,7 +13,7 @@ Description:
     	For most of easy cases, there will only be one nucleotide that is found in >30% for each position.
     	In the more difficult cases, there will be two different sequences that both are rather common. If they differ in more than one position. The solution would be to stop the loop whenever such a position is found and then divide the data frame into two data frames (based on the nucleotide found at this position). Then the analysis (step 2 and 3) can be re-performed on each of these data frames separately.   
 Usage:
-    ./../extractUL.py IGHV1-18\*01.txt IGHV1-18\*01_out IGHV1-18\*01 seqlogo_IGHV1-18\*01
+    python ../extractUL.py IGHV1-18\*01.txt IGHV1-18\*01_out IGHV1-18\*01 seqlogo_IGHV1-18\*01
 '''
 
 import sys
