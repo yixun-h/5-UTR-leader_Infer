@@ -1,7 +1,14 @@
 #!/Users/apple/anaconda3/bin/python3
 #!/usr/bin/env python
-
-#./low_CDR.py low_CDR.txt 5_UL_empty_remove.txt 6_lowCDR_remove.txt
+'''
+Title: barcode_remove
+Author:Yixun Huang
+Description:
+    This script was used as one step in filter.sh. 
+    It will remove the alleles which is in "low_CDR.txt" because their CDR3 is lower than 75.
+Usage:
+    ./low_CDR.py low_CDR.txt 5_UL_empty_remove.txt 6_lowCDR_remove.txt
+'''
 import sys
 alleles=[]
 output=''
