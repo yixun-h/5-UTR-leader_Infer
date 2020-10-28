@@ -1,7 +1,21 @@
 #!/Users/apple/anaconda3/bin/python3
 #!/usr/bin/env python3
-# ./../extractUL.py IGHV1-18\*01.txt IGHV1-18\*01_out IGHV1-18\*01 seqlogo_IGHV1-18\*01
-#plot shows How many reads in each position
+'''
+Title: extractUL.py
+Author:Yixun Huang
+Description:
+    This script is a key step of 5'UTR-leader sequences inference. It achieved by filter.sh.
+    It input the reads of one allele after filtering.The output is the inferred 5'UTR-leader sequences, and the plots if sequence logo and the frequency counting of the most popular nucleotide in each position
+    The strategy of extracting UTR-leader seqs is as follows:
+    1.	Read the sequences, flip them over and store them in a data frame (so that the 3' most base ends up in column 1, the second 3' most base ends up in column 2, an so on).
+    2.	Identify the columns where less than 50% of the rows contain data. Any data 5' of this should not be used. (calculate the percentage of missing value for each colunm. clip this columns away)
+    3.	Loop over the columns (stopping at the column identified in 2.), and check which nucleotide/nucleotides that are present in more than 30% of all rows. Missing data (that will occur in the 5' end of the sequences) should probably not be considered here, but the nucleotide should found in >30% of the rows where there actually is data. 
+    	In the most easy case, there will only be one nucleotide that is found in >30% for each position.
+    	In the more difficult cases, there will be two different sequences that both are rather common. If they differ in more than one position. The solution would be to stop the loop whenever such a position is found and then divide the data frame into two data frames (based on the nucleotide found at this position). Then the analysis (step 2 and 3) can be re-performed on each of these data frames separately.   
+Usage:
+    ./../extractUL.py IGHV1-18\*01.txt IGHV1-18\*01_out IGHV1-18\*01 seqlogo_IGHV1-18\*01
+'''
+
 import sys
 import pandas as pd
 import numpy as np
@@ -30,7 +44,7 @@ df_list = [seq_df] # I need the df to be in a list, in order to handle upcoming 
 not_done = True
 restart = False
 while not_done:
-    consensus_sequence = [] # I need a list to be able to save MULTIPLE consensus sequences
+    consensus_sequence = [] # a list to be able to save MULTIPLE consensus sequences
     # Loop over all dataframes in the list
     for i in range(len(df_list)):
         consensus_sequence.append("")
@@ -68,7 +82,6 @@ for i in range(len(df_list)):
     rows_list = []
     for col in df_list[i]:
         count=df_list[i][col].value_counts().max()
-        #common1=df_list[i][col].value_counts().nlargest(n=1)
         indexs=df_list[i][col].value_counts()[:1].index.tolist()
         for index in indexs:
             rows_list.append([index,count])
@@ -76,8 +89,6 @@ for i in range(len(df_list)):
     plt.clf()
     plot=df1.plot(y=[1],use_index=True)
     fig=plot.get_figure()
-
-    #fig.set_xticklabels(df1[0]) #change Xticks from index to 'ATCG', but index is incompleted
     plt.title('the most frequent nucleotide in each position')
     plt.xlabel('nucleatide position')
     plt.ylabel('number of reads')
