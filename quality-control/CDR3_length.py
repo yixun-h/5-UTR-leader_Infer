@@ -1,7 +1,12 @@
 #go to 3_filter2 and do
-# python length_divide_cut.py ~/5_allele/2_sum_fasta/IGHV4-4_02.fasta IGHV4-4\*02
-# python length_divide_cut.py ~/5_allele/2_sum_fasta/IGHV1-18_01.fasta IGHV1-18\*01
-
+'''
+Title: CDR3_length.py
+Author:Yixun Huang
+Description:
+    This program will plot the CDR3_length distribution pattern of one specific allele for all subjects.
+Usage:
+     python CDR3_length.py ~/5_allele/2_sum_fasta/IGHV4-4_02.fasta IGHV4-4\*02
+'''
 # maximum 8 lines in one plot
 
 import glob
