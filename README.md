@@ -10,7 +10,7 @@ The pipeline is consist of three sections:
 ## Table of contents
 Purpose | tools
 ------------ | ------------- 
-5'-barcode clipping | [barcode_remove.py](barcode_remove.py)
+5'-barcode clipping | [barcode_remove.py](pro-process/barcode_remove.py)
 Paired-end reads synchronizing | [PairSeq.py from pRESTO](https://presto.readthedocs.io/en/stable/tools/PairSeq.html#pairseq)
 antibody repertoires analysis| [IgDiscover](http://docs.igdiscover.se/en/stable/index.html)
 alignement filtering | [filtered.sh](filtered.sh)
