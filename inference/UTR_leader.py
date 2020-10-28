@@ -7,7 +7,7 @@ Description:
     This script was used as one step in filter.sh. 
     It will merge column 'UTR' and 'leader' into a new column 'UTR_leader'
 Usage:
-    ./UTR_leader.py 2_filtered_V_error_0.tab 3_merged.tab
+    python UTR_leader.py 2_filtered_V_error_0.tab 3_merged.tab
 '''
 
 import pandas as pd
