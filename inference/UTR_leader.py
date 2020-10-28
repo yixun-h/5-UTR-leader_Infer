@@ -1,5 +1,14 @@
 #!/Users/apple/anaconda3/bin/python3
 #!/usr/bin/env python
+'''
+Title: barcode_remove
+Author:Yixun Huang
+Description:
+    This script was used as one step in filter.sh. 
+    It will merge column 'UTR' and 'leader' into a new column 'UTR_leader'
+Usage:
+    ./UTR_leader.py 2_filtered_V_error_0.tab 3_merged.tab
+'''
 #merge column UTR and leafer into a new column 'UTR_leader'
 # ./UTR_leader.py 2_filtered_V_error_0.tab 3_merged.tab
 
