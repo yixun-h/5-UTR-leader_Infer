@@ -16,7 +16,7 @@ antibody repertoires analysis| [IgDiscover](http://docs.igdiscover.se/en/stable/
 alignement filtering | [filtered.sh](https://github.com/yixun-h/5-UTR-leader_Infer/blob/main/filter.sh)
 5'UTR-leader seqs extracting | [extract_UL.py](inference/extract_UL.py)
 summarizing seqs from subjects | [allele.sh](inference/allele.sh)
-summarizing seqs from alleles | [aligned.py](inference/aligned.py) & [count.py](inference/count.py)
+summarizing seqs from alleles into final dataset | [aligned.py](inference/aligned.py) & [count.py](inference/count.py)
 Haplotype Inference  | [haplotyping.py](quality-control/haplotyping.py)
 CDR3-length distribution analysis | [CDR3_length.py](quality-control/CDR3_length.py)
 
