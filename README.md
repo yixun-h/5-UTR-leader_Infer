@@ -15,12 +15,13 @@ Paired-end reads synchronizing | [PairSeq.py from pRESTO](https://presto.readthe
 antibody repertoires analysis| [IgDiscover](http://docs.igdiscover.se/en/stable/index.html)
 alignement filtering | [filtered.sh](https://github.com/yixun-h/5-UTR-leader_Infer/blob/main/filter.sh)
 5'UTR-leader seqs extracting | [extract_UL.py](inference/extract_UL.py)
-summarizing seqs from subjects | [allele.sh](inference/allele.sh & [count.py](inference/count.py)
-summarizing seqs from alleles into final dataset | 
+summarizing seqs from subjects | [allele.sh](inference/allele.sh) & [count.py](inference/count.py)
+summarizing seqs from alleles into final dataset | [sum.sh](inference/sum.sh)
 Haplotype Inference  | [haplotyping.py](quality-control/haplotyping.py)
 CDR3-length distribution analysis | [CDR3_length.py](quality-control/CDR3_length.py)
 
 ## Usage of code in project
+
 ![flow (1)](https://user-images.githubusercontent.com/61463722/97312948-5ebb5c00-1866-11eb-8c5e-ab5fa97846b8.png)
 
 ## Technologies
