@@ -1,3 +1,12 @@
+'''
+Title: align.py
+Author:Yixun Huang
+Description:
+    This script will format txt files into fasta files.
+    This is a step of snakefile2.
+Usage:
+    ./barcode_remove.py sample2.fastq filtered_sample.fastq
+'''
 #format txt files into fasta files
 import sys
 with open (sys.argv[1],'r') as fin, open (sys.argv[2],'w') as fout:
