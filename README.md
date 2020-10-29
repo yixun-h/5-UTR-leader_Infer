@@ -22,7 +22,7 @@ CDR3-length distribution analysis | [CDR3_length.py](quality-control/CDR3_length
 
 ## Usage of code in project
 
-![flow (1)](https://user-images.githubusercontent.com/61463722/97312948-5ebb5c00-1866-11eb-8c5e-ab5fa97846b8.png)
+![FF](https://user-images.githubusercontent.com/61463722/97583263-04053a00-19f7-11eb-8033-66ef97c0ba3e.png)
 
 ## Technologies
 Project is created with:
