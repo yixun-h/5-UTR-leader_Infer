@@ -1,4 +1,12 @@
-#create output file for CDR3 lengths plots and haplotyping analysis
+'''
+Title: allele.sh
+Author:Yixun Huang
+Description:
+    This script will create output file for each alleles based on the information from all subjects and calculate the frequency of each sequence.
+Usage:
+    ./allele.sh
+'''
+#create output file for each alleles based on the information from all subjects
 cd ~/3_filter2/
 for d in */; do #loop over directories
   cd ~/3_filter2/${d%/}/splitting/output
