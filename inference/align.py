@@ -3,9 +3,9 @@ Title: align.py
 Author:Yixun Huang
 Description:
     This script will format txt files into fasta files.
-    This is a step of snakefile2.
+    This is a step of allele.sh.
 Usage:
-    ./barcode_remove.py sample2.fastq filtered_sample.fastq
+    see allele.sh
 '''
 #format txt files into fasta files
 import sys
