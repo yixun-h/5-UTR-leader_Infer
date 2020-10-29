@@ -1,7 +1,7 @@
 #!/Users/apple/anaconda3/bin/python3
 #!/usr/bin/env python
 '''
-Title: barcode_remove
+Title: low_CDR.py
 Author:Yixun Huang
 Description:
     This script was used as one step in filter.sh. 
