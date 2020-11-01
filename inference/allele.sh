@@ -2,7 +2,8 @@
 Title: allele.sh
 Author:Yixun Huang
 Description:
-    This script will create output file for each alleles based on the information from all subjects and calculate the frequency of each sequence.
+    This script will create output file for each alleles based on the information from all subjects, 
+    calculate the frequency of each sequence, and format output into fasta format.
 Usage:
     ./allele.sh
 '''
