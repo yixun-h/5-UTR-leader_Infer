@@ -2,7 +2,7 @@
 #!/usr/bin/env python3
 '''
 Title: extractUL.py
-Author:Yixun Huang
+Author:Yixun Huang & Linnea Thörnqvist
 Description:
     This script is a key step of 5'UTR-leader sequences inference. It achieved by filter.sh.
     It input the reads of one allele after filtering.The output is the inferred 5'UTR-leader sequences, and the plots if sequence logo and the frequency counting of the most popular nucleotide in each position
