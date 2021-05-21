@@ -17,7 +17,7 @@ alignement filtering | [filtered.sh](https://github.com/yixun-h/5-UTR-leader_Inf
 5'UTR-leader seqs extracting | [extract_UL.py](inference/extract_UL.py)
 summarizing seqs from subjects | [allele.sh](inference/allele.sh) & [count.py](inference/count.py)
 summarizing seqs from alleles into final dataset | [sum.sh](inference/sum.sh)
-Haplotype Inference  | [haplotyping.py](quality-control/haplotyping.py)
+Haplotype Inference  | [haplotyping.py](quality-control/haplotyping.py), [haplotyping2.py](quality-control/haplotyping2.py)(for heterozygous V genes)
 CDR3-length distribution analysis | [CDR3_length.py](quality-control/CDR3_length.py)
 
 ## Usage of code in project
